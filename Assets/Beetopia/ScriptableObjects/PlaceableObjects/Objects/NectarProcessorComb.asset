@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208332216eba4ba783437818e98d27ef, type: 3}
+  m_Name: NectarProcessorComb
+  m_EditorClassIdentifier: 
+  name: Nectar Processor
+  description: Nectar Refiner
+  icon: {fileID: 3411787183020599100, guid: 032ecd34f90b31b43b78c8f1cd4074b4, type: 3}
+  itemType: 2
+  rarity: 0
+  maxStackAmount: 99999999
+  price: 25
+  nameLocalization: []
+  descriptionLocalization: []
+  prefab: {fileID: 1095243679637137179, guid: 830ea21c73818bf49ade084f3822e0ff, type: 3}
+  visual: {fileID: 1095243679637137179, guid: c1bb58c4f49785c46a54ca85c059b4a6, type: 3}
+  canBeDestroyed: 1

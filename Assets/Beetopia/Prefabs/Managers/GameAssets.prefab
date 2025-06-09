@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7499580099055984283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1195698501113346167}
+  - component: {fileID: 6292699884260344707}
+  m_Layer: 0
+  m_Name: GameAssets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1195698501113346167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7499580099055984283}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6292699884260344707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7499580099055984283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcacd9abd00428998340cfa5f3214ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorType_Refs:
+    defaultCursor: {fileID: 2800000, guid: 103ee7b7b3a2f78459c04e35b0a97e5a, type: 3}
+    smokerCursor: {fileID: 2800000, guid: bb581bbe05348b4489f2c40bbea7ab12, type: 3}
+    buildingCursor: {fileID: 0}
+  placedObjectTypeSO_Refs:
+    storage: {fileID: 11400000, guid: 90b57a80f0b97d44b935811465fdb202, type: 2}
+    waterwell: {fileID: 11400000, guid: d90c2a8b3d09aab44a158ee4a69dcabe, type: 2}
+    nectarProcessorComb: {fileID: 11400000, guid: 9fb9bcdff4bb28b44b29ae11e1052ea4, type: 2}
+    nectarProcessorFramedComb: {fileID: 11400000, guid: 18f8b702a3f76764ab4cc61e1dbaa8a5, type: 2}
+    combProcessor: {fileID: 11400000, guid: 3e08deed76bd0b849a80c166d39a4aa6, type: 2}
+    framedCombProcessor: {fileID: 11400000, guid: 409ff7bf1f324de49ac1c42067f708a3, type: 2}
+  cropObjectTypeSO_Refs:
+    chamomile: {fileID: 11400000, guid: 2ac7ee1f3a514ef45a11e4732d6ae906, type: 2}
+    pinkCat: {fileID: 11400000, guid: 7ba5abf8935a68d46a3c11859ad9d57d, type: 2}
+    purpleConeflower: {fileID: 11400000, guid: 7b563abf473742347a7c1939ed24f8f3, type: 2}
+    rose: {fileID: 11400000, guid: e328bbc1e8f5bde4d9f83b2a9337cc99, type: 2}
+    shadedViolet: {fileID: 11400000, guid: ba7f3db880894ce42af5e6c97b8341ee, type: 2}
+    springRose: {fileID: 11400000, guid: 1b80d712605b9c148ba3134189052055, type: 2}
+    sweetJasmine: {fileID: 11400000, guid: c16519ab2c0ca9149872c3355e3677f6, type: 2}
+  itemSO_Refs:
+    nectar_chamomile: {fileID: 11400000, guid: c408fdfbf1857a642bf06610c2d978f4, type: 2}
+    honeyComb_chamomile: {fileID: 11400000, guid: 215fa535ea87ea34f93b30d71a19a8d9, type: 2}
+    honeyCombFramed_chamomile: {fileID: 0}
+    honey_chamomile: {fileID: 11400000, guid: 215fa535ea87ea34f93b30d71a19a8d9, type: 2}
+    nectar_lavender: {fileID: 0}
+    honeyComb_lavender: {fileID: 0}
+    honeyCombFramed_lavender: {fileID: 0}
+    honey_lavender: {fileID: 0}
+    nectar_herb: {fileID: 0}
+    honeyComb_herb: {fileID: 0}
+    honeyCombFramed_herb: {fileID: 0}
+    honey_herb: {fileID: 0}
+    nectar_pinkRose: {fileID: 0}
+    honeyComb_pinkRose: {fileID: 0}
+    honeyCombFramed_pinkRose: {fileID: 0}
+    honey_pinkRose: {fileID: 0}
+    nectar_clover: {fileID: 0}
+    honeyComb_clover: {fileID: 0}
+    honeyCombFramed_clover: {fileID: 0}
+    honey_clover: {fileID: 0}
+    wax: {fileID: 11400000, guid: b76ad7739fe080c4780234c9d6534ae2, type: 2}
+    any: {fileID: 0}
+    none: {fileID: 0}
+  pfWorldItem: {fileID: 4122194750006828700, guid: 69c4b01f4a6fee943882129013d523bf, type: 3}
+  hintSprite_Refs:
+    water: {fileID: -2099234453255887702, guid: fb2a3a1124eb3534994d6a27d90e7be9, type: 3}
+    nectar: {fileID: 7844112737534142498, guid: fb2a3a1124eb3534994d6a27d90e7be9, type: 3}
+  entity_Refs:
+    beeUnitDefault: {fileID: 11400000, guid: 384d9b0f4041a4b478352074f3c86921, type: 2}
+    beeUnitSpeed: {fileID: 11400000, guid: 80dad7aed7d75244aad718211d7e9fcf, type: 2}
+    beeUnitLoader: {fileID: 11400000, guid: d306e622378cc0347951285d4c9054e4, type: 2}
+    any: {fileID: 0}
+    none: {fileID: 0}

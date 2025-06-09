@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b46ac0fcda4e9bae6ce1be19c7c5e5, type: 3}
+  m_Name: Bee_Loader
+  m_EditorClassIdentifier: 
+  name: Bee Loader
+  description: Bee
+  icon: {fileID: -6282757683644978441, guid: bd98e7be1e8194e44bb17760e5e4f0d6, type: 3}
+  itemType: 0
+  rarity: 0
+  maxStackAmount: 0
+  price: 150
+  nameLocalization: []
+  descriptionLocalization: []
+  prefab: {fileID: 5994717554484044931, guid: 1b88cb26cd52803499a6db9f92b00737, type: 3}
+  maxCarryingAmount: 4
+  speed: 1

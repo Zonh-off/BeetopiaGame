@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208332216eba4ba783437818e98d27ef, type: 3}
+  m_Name: Storage
+  m_EditorClassIdentifier: 
+  name: Storage
+  description: Storage
+  icon: {fileID: -12631043, guid: 032ecd34f90b31b43b78c8f1cd4074b4, type: 3}
+  itemType: 2
+  rarity: 0
+  maxStackAmount: 0
+  price: 0
+  nameLocalization: []
+  descriptionLocalization: []
+  prefab: {fileID: 1095243679637137179, guid: d3088fa40deef444c9dd124e9cc30a6d, type: 3}
+  visual: {fileID: 1095243679637137179, guid: 55e87f21912e7f140ac6d5ca17882844, type: 3}
+  canBeDestroyed: 0

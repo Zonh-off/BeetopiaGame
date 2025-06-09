@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdcf5b3afe5d4f839f0908c83a2a9c84, type: 3}
+  m_Name: crop_PurpleConeflowerSO
+  m_EditorClassIdentifier: 
+  name: Purple Coneflower
+  description: Purple Coneflower
+  icon: {fileID: 6974070293830902587, guid: 95aef6dad999ab842b2c6f3b40e31754, type: 3}
+  itemType: 1
+  rarity: 1
+  maxStackAmount: 4294967295
+  price: 16
+  nameLocalization: []
+  descriptionLocalization: []
+  prefab: {fileID: 2575400073907704724, guid: 210abf7bcb173e84fb1d3c79855cebf8, type: 3}
+  visual: {fileID: 2575400073907704724, guid: 82f51c535ba06e34796273179b7ea049, type: 3}
+  canBeDestroyed: 0
+  nectar: {fileID: 11400000, guid: beaceed47e095e445ada87a8cf55b05f, type: 2}
+  harvest: {fileID: 11400000, guid: f5b43959443fc4246b0f9eb8e3e0caa2, type: 2}
+  yieldAmount: 2
+  cropPhasesList:
+  - phase: 0
+    sprite: {fileID: -5147469549089889867, guid: 95fc4dee22a47b646839c9021ad7091d, type: 3}
+    time: 3
+  - phase: 1
+    sprite: {fileID: 6153749393056563297, guid: 95fc4dee22a47b646839c9021ad7091d, type: 3}
+    time: 2
+  - phase: 2
+    sprite: {fileID: -2164963168105758066, guid: 95fc4dee22a47b646839c9021ad7091d, type: 3}
+    time: 3
+  - phase: 3
+    sprite: {fileID: -5380274474058054863, guid: 95fc4dee22a47b646839c9021ad7091d, type: 3}
+    time: 4
+  - phase: 4
+    sprite: {fileID: 8106955670398708753, guid: 95fc4dee22a47b646839c9021ad7091d, type: 3}
+    time: 5
+  - phase: 5
+    sprite: {fileID: 586200222402662079, guid: 95fc4dee22a47b646839c9021ad7091d, type: 3}
+    time: 8

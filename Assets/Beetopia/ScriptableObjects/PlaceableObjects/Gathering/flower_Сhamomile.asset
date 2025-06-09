@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208332216eba4ba783437818e98d27ef, type: 3}
+  m_Name: "flower_\u0421hamomile"
+  m_EditorClassIdentifier: 
+  name: Chamomile
+  description: "\u0421hamomile"
+  icon: {fileID: -5989484844042679461, guid: b782e6f5f7ab04e4384b43255faa90da, type: 3}
+  itemType: 2
+  rarity: 0
+  maxStackAmount: 0
+  price: 0
+  nameLocalization: []
+  descriptionLocalization: []
+  prefab: {fileID: 2575400073907704724, guid: 210abf7bcb173e84fb1d3c79855cebf8, type: 3}
+  visual: {fileID: 2575400073907704724, guid: 82f51c535ba06e34796273179b7ea049, type: 3}
+  canBeDestroyed: 1
