@@ -3,7 +3,7 @@
 **Beetopia** is a 2D idle-style simulation game developed using the Unity engine. The player manages a virtual beehive, places buildings, interacts with the environment, and controls automated bee units that perform tasks and gather nectar.
 
 
-![Gameplay Screenshot](images/s1.png)
+![Gameplay Screenshot](images/S1.png)
 
 ---
 
