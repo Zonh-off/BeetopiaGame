@@ -2889,7 +2889,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0412\u0418\u0411\u0420\u0410\u0422\u0418"
+  m_text: SELECT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ca13fd9a1dc20f7409f48687ed54b6e7, type: 2}
   m_sharedMaterial: {fileID: 4198596899832987694, guid: ca13fd9a1dc20f7409f48687ed54b6e7, type: 2}
@@ -2916,8 +2916,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 3
-  m_fontSizeBase: 3
+  m_fontSize: 7
+  m_fontSizeBase: 7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
