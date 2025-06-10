@@ -29,8 +29,13 @@ public class BeeListUI : MonoBehaviour, ISidePanel {
         gameObject.SetActive(false);
     }
     
-    private void UpdateItemList() {
-        Transform itemContainer = FindInactiveChildRecursive(transform, "ItemsContainer");
+    private void UpdateItemList()
+    {
+        Transform itemContainer = null;
+        if (FindInactiveChildRecursive(transform, "ItemsContainer"))
+        {
+            itemContainer = FindInactiveChildRecursive(transform, "ItemsContainer");
+        }
         Transform itemTemplate = itemContainer.Find("Template");
         itemTemplate.gameObject.SetActive(false);
 

@@ -100,7 +100,7 @@ public class ShopUI : MonoBehaviour, ISidePanel {
                         slotX,
                         slotY - itemTransform.GetComponent<RectTransform>().rect.size.y  - 25f
                     );
-                    AddTooltipToButton(itemTransform.GetComponent<Button_UI>(), itemSO.name, pos);
+                    //AddTooltipToButton(itemTransform.GetComponent<Button_UI>(), itemSO.name, pos);
                 };
             }
         }

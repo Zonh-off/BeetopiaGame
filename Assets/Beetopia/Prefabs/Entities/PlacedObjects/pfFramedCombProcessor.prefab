@@ -412,6 +412,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6767816918013537564, guid: 6f7ecdee19593ed43ba8ab12ec261ed0, type: 3}
+      propertyPath: m_text
+      value: "\u041E\u0411\u0420\u0410\u0422\u0418"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6767816918013537564, guid: 6f7ecdee19593ed43ba8ab12ec261ed0, type: 3}
+      propertyPath: m_fontSize
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6767816918013537564, guid: 6f7ecdee19593ed43ba8ab12ec261ed0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7913916444136848868, guid: 6f7ecdee19593ed43ba8ab12ec261ed0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

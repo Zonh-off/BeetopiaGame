@@ -48,28 +48,6 @@ public class GameAssets : MonoBehaviour, IProviderHandler {
         public ItemSO honeyCombFramed_chamomile;
         public ItemSO honey_chamomile;
 
-        public ItemSO nectar_lavender;
-        public ItemSO honeyComb_lavender;
-        public ItemSO honeyCombFramed_lavender;
-        public ItemSO honey_lavender;
-
-        public ItemSO nectar_herb;
-        public ItemSO honeyComb_herb;
-        public ItemSO honeyCombFramed_herb;
-        public ItemSO honey_herb;
-
-        public ItemSO nectar_pinkRose;
-        public ItemSO honeyComb_pinkRose;
-        public ItemSO honeyCombFramed_pinkRose;
-        public ItemSO honey_pinkRose;
-
-        public ItemSO nectar_clover;
-        public ItemSO honeyComb_clover;
-        public ItemSO honeyCombFramed_clover;
-        public ItemSO honey_clover;
-
-        public ItemSO wax;
-
         public ItemSO any;
         public ItemSO none;
     }
