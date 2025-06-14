@@ -105,8 +105,7 @@ public class BeeUnitBehaviour : MonoBehaviour, IItemStorage {
         }
         return collected;
     }
-
-
+    
     private void TryDeliverItems(IItemStorage storage, ItemSO itemSO, uint amount) {
         Debug.Log($"[BeeUnit] Delivering {amount} x {itemSO.name} to {storage}");
         for (int i = 0; i < amount; i++) {
@@ -131,7 +130,7 @@ public class BeeUnitBehaviour : MonoBehaviour, IItemStorage {
         return origin + new Vector3(offset.x, offset.y, 0f);
     }
     
-    private object PlayActionAnimation()
+    public object PlayActionAnimation()
     {
         return transform
            .DOScale(0.2f, 0.2f)

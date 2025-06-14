@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class PlaceObjectTask : ITask {
     public int Priority => 2;
-    
+    public BeeUnitBehaviour assignedBee { get; set; }
+
     private BasePlaceableSO _targetBasePlaceableSo;
     private GridDatabase<BasePlaceableSO> gridDatabase;
     private ObjectPlaceSystem objectPlaceSystem;
@@ -40,8 +41,8 @@ public class PlaceObjectTask : ITask {
 
     public Vector3 GetTargetPosition() => new Vector3(position.x, position.y, 0);
 
-    public IEnumerator Execute(BeeUnitBehaviour workerBeeUnitBehaviour) {
-        yield return workerBeeUnitBehaviour.MoveTo(GetTargetPosition());
+    public IEnumerator Execute(BeeUnitBehaviour bee) {
+        yield return bee.MoveTo(GetTargetPosition());
 
         objectPlaceSystem.TryGetStoredGameObjectByIndex(index).gameObject.SetActive(true);
         objectPlaceSystem.TryGetStoredGameObjectByIndex(index).GetComponent<BasePlacedObject>().PlayPunchAnim();
@@ -54,4 +55,15 @@ public class PlaceObjectTask : ITask {
     public bool IsCompleted() {
         return isCompleted;
     }
+    
+    public bool AssignTo(BeeUnitBehaviour bee)
+    {
+        if (assignedBee == null) {
+            assignedBee = bee;
+            return true;
+        }
+        return false;
+    }
+    
+    public bool IsAssigned() => assignedBee != null;
 }

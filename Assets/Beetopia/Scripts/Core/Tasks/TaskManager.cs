@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class TaskManager : MonoBehaviour, IProviderHandler {
@@ -18,31 +19,24 @@ public class TaskManager : MonoBehaviour, IProviderHandler {
     public ITask GetNextTask(BeeUnitBehaviour beeUnitBehaviour) {
         if (taskQueue.Count == 0) return null;
 
-        if (beeUnitBehaviour.IsGatheringMode) {
-            foreach (var queue in taskQueue.Values) {
-                foreach (var task in queue) {
-                    if (task is CollectWorldItemTask) {
-                        queue.Dequeue();
-                        return task;
-                    }
+        foreach (var queue in taskQueue.Values)
+        {
+            foreach (var task in queue.Where(task => !task.IsAssigned()))
+            {
+                if (beeUnitBehaviour.IsGatheringMode && task is CollectWorldItemTask && task.AssignTo(beeUnitBehaviour)) {
+                    queue.Dequeue();
+                    return task;
                 }
-            }
-        }
-        
-        if (beeUnitBehaviour.GatheredItemsCount >= 1) {
-            foreach (var queue in taskQueue.Values) {
-                foreach (var task in queue) {
-                    if (task is DeliverItemTask) {
-                        queue.Dequeue();
-                        return task;
-                    }
+
+                if (beeUnitBehaviour.GatheredItemsCount >= 1 && task is DeliverItemTask && task.AssignTo(beeUnitBehaviour)) {
+                    queue.Dequeue();
+                    return task;
                 }
-            }
-        }
-        
-        foreach (var kvp in taskQueue) {
-            if (kvp.Value.Count > 0) {
-                return kvp.Value.Dequeue();
+
+                if (task.AssignTo(beeUnitBehaviour)) {
+                    queue.Dequeue();
+                    return task;
+                }
             }
         }
 

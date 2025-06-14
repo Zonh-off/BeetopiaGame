@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class CollectWorldItemTask : ITask {
     public int Priority => 3;
+    public BeeUnitBehaviour assignedBee { get; set; }
 
     private WorldItem worldItem;
     private Vector3 worldItemPos;
@@ -14,19 +15,19 @@ public class CollectWorldItemTask : ITask {
 
     public Vector3 GetTargetPosition() => worldItemPos;
 
-    public IEnumerator Execute(BeeUnitBehaviour workerBeeUnitBehaviour) {
+    public IEnumerator Execute(BeeUnitBehaviour bee) {
         if (worldItem.GetItemSO() != null) {
             var itemSO = worldItem.GetItemSO();
             var deliveryTarget = Object.FindFirstObjectByType<StorageObject>();
             
             worldItemPos = worldItem.transform.position;
             
-            yield return workerBeeUnitBehaviour.CollectItem(worldItem, itemSO);
+            yield return bee.CollectItem(worldItem, itemSO);
             worldItem.DestroySelf();
 
-            uint amountCarrying = workerBeeUnitBehaviour.GetItemStoredCount(itemSO);
+            uint amountCarrying = bee.GetItemStoredCount(itemSO);
             if (amountCarrying > 0) {
-                yield return workerBeeUnitBehaviour.DeliverItem(deliveryTarget, itemSO, amountCarrying);
+                yield return bee.DeliverItem(deliveryTarget, itemSO, amountCarrying);
             }
 
             isCompleted = true;
@@ -34,4 +35,15 @@ public class CollectWorldItemTask : ITask {
     }
 
     public bool IsCompleted() => isCompleted;
+    
+    public bool AssignTo(BeeUnitBehaviour bee)
+    {
+        if (assignedBee == null) {
+            assignedBee = bee;
+            return true;
+        }
+        return false;
+    }
+    
+    public bool IsAssigned() => assignedBee != null;
 }

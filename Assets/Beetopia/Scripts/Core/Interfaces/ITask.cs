@@ -2,8 +2,11 @@
 using UnityEngine;
 
 public interface ITask {
-    Vector3 GetTargetPosition();
-    IEnumerator Execute(BeeUnitBehaviour workerBeeUnitBehaviour);
-    bool IsCompleted(); 
     int Priority { get; }
+    BeeUnitBehaviour assignedBee { get; set; }
+    Vector3 GetTargetPosition();
+    IEnumerator Execute(BeeUnitBehaviour bee);
+    bool IsCompleted();
+    public bool AssignTo(BeeUnitBehaviour bee);
+    bool IsAssigned();
 }

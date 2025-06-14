@@ -16,6 +16,7 @@ public class UnitsManager : MonoBehaviour, IProviderHandler {
         int index = _unitsSpawnSystem.SpawnBeeEntityObject(beeUnitSo, position);
 
         _unitsSpawnSystem.TryGetStoredBeeUnitObjectByIndex(index).GetComponent<BeeUnitBehaviour>();
+        _unitsSpawnSystem.TryGetStoredBeeUnitObjectByIndex(index).name = $"Bee {index}";
         G.DataManager.TryStoreUnit(beeUnitSo);
         
         G.DataManager.RemoveCoins(beeUnitSo.price);
