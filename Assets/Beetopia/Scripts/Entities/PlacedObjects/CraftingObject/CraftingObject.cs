@@ -215,7 +215,7 @@ public class CraftingObject : BasePlacedObject, IInteractable, IItemStorage, IRe
 
     public void SetItemRecipeScriptableObject(ItemRecipeSO itemRecipeSO) {
         this.itemRecipeSO = itemRecipeSO;
-        
+
         foreach (var item in itemRecipeSO.input) {
             if (G.DataManager.CheckStoredItem(new ItemSO[] { item.item }, item.amount)) {
                 var storageObject = FindFirstObjectByType<StorageObject>();

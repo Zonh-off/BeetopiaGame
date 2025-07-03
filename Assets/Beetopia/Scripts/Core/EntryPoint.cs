@@ -34,9 +34,9 @@ public class EntryPoint : MonoBehaviour {
     private IEnumerator GameSetup() {
         yield return G.DataManager.InitializeData();
         
-        yield return G.DataManager.TryStoreItem(G.GameAssets.itemSO_Refs.honey_chamomile, 100);
-        yield return G.DataManager.TryStoreItem(G.GameAssets.itemSO_Refs.nectar_chamomile, 100);
-        yield return G.DataManager.TryStoreItem(G.GameAssets.itemSO_Refs.honeyComb_chamomile, 20);
+        yield return G.DataManager.TryStoreItem(G.GameAssets.itemSO_Refs.honey_chamomile, 15);
+        yield return G.DataManager.TryStoreItem(G.GameAssets.itemSO_Refs.nectar_chamomile, 25);
+        yield return G.DataManager.TryStoreItem(G.GameAssets.itemSO_Refs.honeyComb_chamomile, 3);
         
         yield return G.InputManager.Initialize();
         yield return G.CameraManager.Initialize();
@@ -57,6 +57,21 @@ public class EntryPoint : MonoBehaviour {
     private void Update() {
         if (Input.GetKeyDown(KeyCode.C)) {
             G.DataManager.AddCoins(500);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Time.timeScale = 3;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Time.timeScale = 2;
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Time.timeScale = 1;
         }
     }
 }

@@ -48,6 +48,11 @@ public class CropObject : BasePlacedObject, IItemStorage, IHarvest {
         UpdatePhase(0);
 #endif
     }
+
+    public bool IsLastPhase()
+    {
+        return _currentCropPhase.phase == cropPhasesList.Length - 1;
+    }
     
     private void Update() {
         UpdateTimers();

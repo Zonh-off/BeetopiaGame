@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bee_Speed
   m_EditorClassIdentifier: 
   name: Turbo Bee
-  description: Bee
+  description: Turbo Bee
   icon: {fileID: -3804801852346003971, guid: bd98e7be1e8194e44bb17760e5e4f0d6, type: 3}
   itemType: 0
   rarity: 0

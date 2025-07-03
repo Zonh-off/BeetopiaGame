@@ -60,7 +60,7 @@ public class SelectRecipeCanvas : MonoBehaviour {
     }
 
     private void UpdateSelectedRecipe() {
-        if (basePlacedObject != null && !basePlacedObject.GetComponent<IRecipeStorage>().HasItemRecipe()) {
+        if (basePlacedObject != null) { // !basePlacedObject.GetComponent<IRecipeStorage>().HasItemRecipe()
             basePlacedObject.GetComponent<IRecipeStorage>().SetItemRecipeScriptableObject(selectedRecipe);
         }
     }

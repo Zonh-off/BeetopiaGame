@@ -41,18 +41,19 @@ public class DataManager : MonoBehaviour, IProviderHandler {
         return stack != null && stack.amount >= requiredAmount;
     }
     
-    public bool TryGetStoredItem(ItemSO[] filter, uint amount, out ItemStack result) {
-        var sourceStack = gameData.itemStackList.GetFirstItemStackWithFilter(filter);
-        if (sourceStack != null && sourceStack.amount >= amount) {
-            sourceStack.amount -= amount;
-            result = new ItemStack { itemSO = sourceStack.itemSO, amount = amount };
-            return true;
+    public void TryRemoveItem(ItemSO[] filter, uint amount = 1) {
+        var itemStack = gameData.itemStackList.GetFirstItemStackWithFilter(filter);
+        if (itemStack == null || itemStack.amount == 0) return;
+
+        itemStack.amount = Math.Max(0, itemStack.amount - amount);
+
+        if (itemStack.amount == 0) {
+            gameData.itemStackList.RemoveItemFromItemStack(itemStack.itemSO, amount);
         }
 
-        result = null;
-        return false;
+        OnItemsUpdate?.Invoke();
     }
-    
+
     public bool TryStoreItem(ItemSO itemSO, uint amount) {
         if (!gameData.itemStackList.CanAddItemToItemStack(itemSO)) return false;
 

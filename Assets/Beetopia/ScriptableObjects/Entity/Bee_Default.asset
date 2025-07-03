@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bee_Default
   m_EditorClassIdentifier: 
   name: Default Bee
-  description: Bee
+  description: Default Bee
   icon: {fileID: -7001600362463739231, guid: bd98e7be1e8194e44bb17760e5e4f0d6, type: 3}
   itemType: 0
   rarity: 0

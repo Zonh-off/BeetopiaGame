@@ -1,10 +1,7 @@
 using CodeMonkey.Utils;
-using DG.Tweening;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
-using Vector3 = UnityEngine.Vector3;
 
 public class CropObjectVisual : MonoBehaviour {
     [SerializeField] private CropObject cropObject;
@@ -30,7 +27,7 @@ public class CropObjectVisual : MonoBehaviour {
 
     private void ShowInfoTooltip() {
         if (infoTooltipCanvas != null) {
-            if (cropObject.HasWater() && !cropObject.HasHarvest()) {
+            if (cropObject.HasWater() && !cropObject.HasHarvest() && cropObject.IsLastPhase()) {
                 infoTooltipCanvas.gameObject.SetActive(true);
                 if (infoTooltipCanvas.gameObject.activeSelf) {
                     infoTooltipCanvas.Find("Time").GetComponent<TextMeshProUGUI>().text = UtilsClass.FormatTime(cropObject.GetRemainingProduceTime());

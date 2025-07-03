@@ -59,7 +59,6 @@ public class ItemStackList {
             itemStackList.Remove(itemStack);
         }
     }
-
     
     public ItemStack GetItemStackWithItemType(ItemSO itemSO) {
         foreach (ItemStack itemStack in itemStackList) {

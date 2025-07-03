@@ -32,11 +32,11 @@ public class CameraManager : MonoBehaviour, IProviderHandler {
         if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed) move.x += 1;
 
 #if !UNITY_EDITOR
-        Vector2 mousePos = Mouse.current.position.ReadValue();
+        /*Vector2 mousePos = Mouse.current.position.ReadValue();
         if (mousePos.x <= screenEdgeThreshold) move.x -= 0.1f;
         if (mousePos.x >= Screen.width - screenEdgeThreshold) move.x += 0.1f;
         if (mousePos.y <= screenEdgeThreshold) move.y -= 0.1f;
-        if (mousePos.y >= Screen.height - screenEdgeThreshold) move.y += 0.1f;
+        if (mousePos.y >= Screen.height - screenEdgeThreshold) move.y += 0.1f;*/
 #endif
         
         Camera.main.transform.position += move.normalized * moveSpeed * Time.deltaTime;
