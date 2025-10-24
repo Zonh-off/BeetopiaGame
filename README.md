@@ -13,10 +13,8 @@
 - 🐝 **Autonomous Bee Units** — AI-controlled bees execute tasks such as collecting nectar, watering plants, delivering items, and building structures.
 - 🌱 **Plant Lifecycle** — crops grow through multiple visual phases, require watering, and produce harvest.
 - 💧 **Task System** — plants automatically generate tasks when they need water or have nectar to collect.
-- 📦 **Storage & Delivery Logic** — based on a flexible `IItemStorage` interface for transferring resources.
 - 🛍 **Shop UI** — allows the player to purchase new structures, bees, and upgrades.
 - 🌍 **World Expansion System** — unlock new grid areas dynamically.
-- 💾 **Save System** — game state is serialized and stored in JSON format.
 
 ---
 
