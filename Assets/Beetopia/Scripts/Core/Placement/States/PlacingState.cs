@@ -17,7 +17,7 @@ public class PlacingState : IPlacementState {
     }
     
     public void OnAction(Vector2Int position) {
-        bool canPlace = !gridDatabase.HasGridObject(position);
+        bool canPlace = !gridDatabase.HasGridObject(position) && gridDatabase.IsValidGridPosition();
 
         if (!UtilsClass.IsPointerOverUI()) {
             if (canPlace) {

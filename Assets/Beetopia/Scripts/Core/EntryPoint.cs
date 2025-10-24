@@ -55,9 +55,11 @@ public class EntryPoint : MonoBehaviour {
     }
     
     private void Update() {
+#if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.C)) {
             G.DataManager.AddCoins(500);
         }
+#endif
         
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
